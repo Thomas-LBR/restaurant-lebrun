@@ -1,0 +1,13 @@
+name: Ouverture du restaurant
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ouvrir-restaurant:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Annonce d'ouverture
+        run: echo "Le restaurant est ouvert !"
