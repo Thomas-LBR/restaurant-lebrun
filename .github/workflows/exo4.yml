@@ -1,4 +1,4 @@
-name: Lint et tests
+name: Lint et tests multi-caisses
 
 on:
   push:
@@ -9,14 +9,18 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v3
 
-      - name: Installer Node.js
+      - name: Installer Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: ${{ matrix.node-version }}
 
       - name: Installer les dépendances
         run: npm install
