@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "node ./node_modules/jest/bin/jest.js"
   },
   "repository": {
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/Thomas-LBR/restaurant-lebrun#readme",
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
     "jest": "^30.2.0"
   }
-
 }
