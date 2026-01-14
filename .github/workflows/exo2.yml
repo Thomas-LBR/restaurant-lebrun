@@ -1,4 +1,4 @@
-name: Ouverture du restaurant
+name: Calcule d'addition
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le code
+      - name: Récupérer le code 
         uses: actions/checkout@v3
 
       - name: Installer Node.js
