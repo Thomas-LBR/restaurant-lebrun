@@ -8,10 +8,6 @@ jobs:
   ouvrir-restaurant:
     runs-on: ubuntu-latest
 
-    jobs:
-  test:
-    runs-on: ubuntu-latest
-
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v3
